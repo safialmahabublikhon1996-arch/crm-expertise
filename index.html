@@ -1,0 +1,2424 @@
+```html
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>CRM Expertise | GHL, AI Automation & Freelancing Training Bangladesh</title>
+
+  <meta name="description"
+    content="CRM Expertise Bangladesh — GHL, CRM Automation, AI Vibe Coding, AI Agent Building এবং Freelancing English শিখুন practical training-এর মাধ্যমে।" />
+
+  <meta name="keywords"
+    content="GHL Course Bangladesh, GoHighLevel Course, CRM Course Bangladesh, AI Automation Bangladesh, AI Agent Course, Freelancing Course, English for Freelancer" />
+
+  <meta name="author" content="CRM Expertise" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root {
+      --primary: #635bff;
+      --primary-dark: #5048df;
+      --secondary: #00b894;
+      --dark: #101828;
+      --text: #475467;
+      --muted: #667085;
+      --light: #f8faff;
+      --border: #e4e7ec;
+      --white: #ffffff;
+      --success: #12b76a;
+      --warning: #f79009;
+      --shadow: 0 20px 60px rgba(16, 24, 40, 0.10);
+      --radius: 22px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Hind Siliguri", "Inter", sans-serif;
+      color: var(--dark);
+      background: #fff;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    /* =========================
+       TOP BAR
+    ========================= */
+
+    .topbar {
+      background: #101828;
+      color: #fff;
+      text-align: center;
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+
+    .topbar span {
+      color: #8ef0cb;
+      font-weight: 700;
+    }
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.95);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(228,231,236,.8);
+    }
+
+    .nav-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 22px;
+      letter-spacing: -.5px;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #635bff, #00b894);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      box-shadow: 0 8px 20px rgba(99,91,255,.25);
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      color: #344054;
+      transition: .2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .language {
+      border: 1px solid var(--border);
+      background: white;
+      border-radius: 10px;
+      padding: 8px 10px;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .mobile-btn {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    /* =========================
+       BUTTONS
+    ========================= */
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 0;
+      cursor: pointer;
+      padding: 13px 22px;
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      transition: .25s;
+    }
+
+    .btn-primary {
+      color: white;
+      background: linear-gradient(135deg, var(--primary), #817bff);
+      box-shadow: 0 12px 25px rgba(99,91,255,.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 30px rgba(99,91,255,.35);
+    }
+
+    .btn-dark {
+      background: #101828;
+      color: white;
+    }
+
+    .btn-outline {
+      border: 1px solid var(--border);
+      background: white;
+      color: var(--dark);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-lg {
+      padding: 16px 28px;
+      font-size: 17px;
+      border-radius: 14px;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      position: relative;
+      padding: 85px 0 80px;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(99,91,255,.12), transparent 30%),
+        radial-gradient(circle at 90% 30%, rgba(0,184,148,.12), transparent 30%),
+        linear-gradient(180deg, #fbfcff 0%, #fff 100%);
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #eeecff;
+      color: #5148d9;
+      padding: 8px 14px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 5vw, 65px);
+      line-height: 1.12;
+      letter-spacing: -2px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 .gradient {
+      background: linear-gradient(135deg, #635bff, #00a980);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-text {
+      color: var(--text);
+      font-size: 18px;
+      max-width: 620px;
+      margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      color: #667085;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .trust-row span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* HERO CARD */
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .dashboard {
+      position: relative;
+      background: white;
+      border: 1px solid #eaecf0;
+      border-radius: 26px;
+      box-shadow: 0 30px 80px rgba(16,24,40,.15);
+      padding: 20px;
+      transform: rotate(1deg);
+    }
+
+    .dashboard-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eaecf0;
+    }
+
+    .dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .dots i {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #d0d5dd;
+    }
+
+    .dashboard-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #667085;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 18px 0;
+    }
+
+    .stat {
+      padding: 15px;
+      background: #f8f9fc;
+      border-radius: 14px;
+    }
+
+    .stat small {
+      color: #667085;
+      font-size: 11px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 22px;
+      margin-top: 3px;
+    }
+
+    .workflow {
+      padding: 18px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #f4f3ff, #eefcf8);
+    }
+
+    .workflow h4 {
+      margin-bottom: 15px;
+    }
+
+    .flow {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      flex-wrap: wrap;
+    }
+
+    .flow-item {
+      background: white;
+      border: 1px solid #e4e7ec;
+      border-radius: 10px;
+      padding: 8px 10px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .arrow {
+      color: var(--primary);
+      font-weight: 900;
+    }
+
+    .floating-card {
+      position: absolute;
+      background: white;
+      border: 1px solid #eaecf0;
+      box-shadow: 0 15px 40px rgba(16,24,40,.12);
+      border-radius: 16px;
+      padding: 14px 16px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .floating-one {
+      left: -30px;
+      bottom: 40px;
+    }
+
+    .floating-two {
+      right: -25px;
+      top: 45px;
+    }
+
+    /* =========================
+       SECTION
+    ========================= */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-head {
+      max-width: 700px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.2;
+      margin-bottom: 15px;
+      letter-spacing: -.8px;
+    }
+
+    .section-head p {
+      color: var(--text);
+      font-size: 17px;
+    }
+
+    /* =========================
+       FEATURES
+    ========================= */
+
+    .features {
+      background: #fff;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .feature {
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: white;
+      transition: .25s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: #d9d6ff;
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      background: #f0efff;
+      border-radius: 14px;
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    .feature h3 {
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       COURSES
+    ========================= */
+
+    .courses {
+      background: #f8faff;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .course-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 10px 35px rgba(16,24,40,.05);
+    }
+
+    .course-head {
+      padding: 30px;
+      color: white;
+    }
+
+    .ghl-head {
+      background: linear-gradient(135deg, #635bff, #817bff);
+    }
+
+    .english-head {
+      background: linear-gradient(135deg, #008f73, #00b894);
+    }
+
+    .course-tag {
+      display: inline-block;
+      background: rgba(255,255,255,.18);
+      padding: 5px 10px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .course-head h3 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .course-head p {
+      opacity: .9;
+      font-size: 15px;
+    }
+
+    .course-body {
+      padding: 28px;
+    }
+
+    .course-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+
+    .info-box {
+      padding: 13px;
+      background: #f8f9fc;
+      border-radius: 12px;
+    }
+
+    .info-box small {
+      display: block;
+      color: #667085;
+      font-size: 11px;
+    }
+
+    .info-box strong {
+      font-size: 15px;
+    }
+
+    .course-list {
+      list-style: none;
+      margin-bottom: 25px;
+    }
+
+    .course-list li {
+      margin-bottom: 9px;
+      font-size: 14px;
+      color: #344054;
+    }
+
+    .course-list li::before {
+      content: "✓";
+      color: var(--success);
+      font-weight: 800;
+      margin-right: 9px;
+    }
+
+    .course-btn {
+      width: 100%;
+    }
+
+    /* =========================
+       SKILLS
+    ========================= */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skill-card::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      right: -40px;
+      bottom: -40px;
+      border-radius: 50%;
+      background: #f0efff;
+    }
+
+    .skill-number {
+      font-size: 13px;
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    .skill-card h3 {
+      font-size: 21px;
+      margin: 10px 0;
+    }
+
+    .skill-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       JOURNEY
+    ========================= */
+
+    .journey {
+      background: #101828;
+      color: white;
+    }
+
+    .journey .section-label {
+      color: #8ef0cb;
+    }
+
+    .journey .section-head p {
+      color: #98a2b3;
+    }
+
+    .journey-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+    }
+
+    .journey-step {
+      text-align: center;
+      padding: 24px 15px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 18px;
+      background: rgba(255,255,255,.04);
+    }
+
+    .journey-step .num {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #635bff, #00b894);
+      display: grid;
+      place-items: center;
+      margin: 0 auto 15px;
+      font-weight: 800;
+    }
+
+    .journey-step h3 {
+      font-size: 17px;
+      margin-bottom: 5px;
+    }
+
+    .journey-step p {
+      color: #98a2b3;
+      font-size: 12px;
+    }
+
+    /* =========================
+       WHY
+    ========================= */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .why-box {
+      background: linear-gradient(145deg, #f0efff, #effcf8);
+      border-radius: 30px;
+      padding: 40px;
+    }
+
+    .why-box h3 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .why-box p {
+      color: var(--text);
+    }
+
+    .why-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .why-item {
+      display: flex;
+      gap: 15px;
+    }
+
+    .check {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #e8fff5;
+      color: var(--success);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+    }
+
+    .why-item h4 {
+      margin-bottom: 2px;
+    }
+
+    .why-item p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      padding: 80px 0;
+    }
+
+    .cta-box {
+      background:
+        radial-gradient(circle at 90% 10%, rgba(0,184,148,.35), transparent 30%),
+        radial-gradient(circle at 10% 90%, rgba(99,91,255,.4), transparent 30%),
+        #101828;
+      color: white;
+      border-radius: 30px;
+      padding: 65px 40px;
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .cta-box p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: #d0d5dd;
+    }
+
+    /* =========================
+       FAQ
+    ========================= */
+
+    .faq {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: white;
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 20px;
+      border: 0;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 20px 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-item.active .plus {
+      transform: rotate(45deg);
+    }
+
+    .plus {
+      font-size: 25px;
+      transition: .2s;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #080d18;
+      color: white;
+      padding: 60px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 40px;
+    }
+
+    footer .logo {
+      margin-bottom: 15px;
+    }
+
+    footer .logo span {
+      color: #8b85ff;
+    }
+
+    footer p {
+      color: #98a2b3;
+      font-size: 14px;
+    }
+
+    footer h4 {
+      margin-bottom: 15px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 8px;
+      color: #98a2b3;
+      font-size: 14px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 20px;
+      color: #667085;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* =========================
+       MODAL
+    ========================= */
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(16,24,40,.65);
+      backdrop-filter: blur(5px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      padding: 20px;
+    }
+
+    .modal.show {
+      display: flex;
+    }
+
+    .modal-box {
+      width: min(500px, 100%);
+      background: white;
+      border-radius: 25px;
+      padding: 30px;
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 18px;
+      border: 0;
+      background: #f2f4f7;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .modal-box h2 {
+      margin-bottom: 6px;
+    }
+
+    .modal-sub {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      outline: none;
+      font-family: inherit;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: var(--primary);
+    }
+
+    .modal-submit {
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    /* =========================
+       FLOATING WHATSAPP
+    ========================= */
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1500;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 28px;
+      box-shadow: 0 12px 30px rgba(37,211,102,.35);
+      transition: .2s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media(max-width: 950px) {
+
+      .nav-links {
+        position: fixed;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        border-bottom: 1px solid var(--border);
+        transform: translateY(-150%);
+        transition: .3s;
+      }
+
+      .nav-links.active {
+        transform: translateY(0);
+      }
+
+      .mobile-btn {
+        display: block;
+      }
+
+      .nav-actions .btn {
+        display: none;
+      }
+
+      .hero-grid,
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 55px;
+      }
+
+      .hero-visual {
+        max-width: 650px;
+        margin: auto;
+      }
+
+      .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .journey-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width: 650px) {
+
+      .topbar {
+        font-size: 12px;
+      }
+
+      .nav-inner {
+        min-height: 68px;
+      }
+
+      .hero {
+        padding: 45px 0 60px;
+      }
+
+      .hero h1 {
+        font-size: 39px;
+        letter-spacing: -1px;
+      }
+
+      .hero-text {
+        font-size: 16px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .floating-card {
+        display: none;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .feature-grid,
+      .course-grid,
+      .skills-grid,
+      .journey-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .course-head {
+        padding: 25px;
+      }
+
+      .course-head h3 {
+        font-size: 25px;
+      }
+
+      .course-body {
+        padding: 22px;
+      }
+
+      .why-box {
+        padding: 28px;
+      }
+
+      .cta-box {
+        padding: 45px 25px;
+        border-radius: 22px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .dashboard {
+        transform: none;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .flow {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .arrow {
+        text-align: center;
+        transform: rotate(90deg);
+      }
+
+      .whatsapp {
+        width: 52px;
+        height: 52px;
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    🎯 <span>CRM Expertise</span> — আপনার Digital Skill Journey আজ থেকেই শুরু করুন
+  </div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="container nav-inner">
+
+      <a href="#home" class="logo">
+        <div class="logo-icon">C</div>
+        CRM <span>Expertise</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#courses">Courses</a>
+        <a href="#skills">Skills</a>
+        <a href="#journey">Learning Journey</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="nav-actions">
+
+        <select class="language" id="language">
+          <option value="bn">বাংলা</option>
+          <option value="en">English</option>
+          <option value="hi">हिंदी</option>
+        </select>
+
+        <button class="btn btn-primary" onclick="openModal('GHL Course')">
+          Enroll Now
+        </button>
+
+        <button class="mobile-btn" id="mobileBtn">
+          ☰
+        </button>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+      <div>
+
+        <div class="badge">
+          🚀 Practical Digital Skill Training
+        </div>
+
+        <h1>
+          Skill শিখুন।
+          <span class="gradient">নিজের Career তৈরি করুন।</span>
+        </h1>
+
+        <p class="hero-text">
+          GHL, CRM Automation, AI Vibe Coding, AI Agent Building এবং
+          Freelancing English — সবকিছু practicalভাবে শিখুন এবং
+          freelancing-এর জন্য নিজেকে প্রস্তুত করুন।
+        </p>
+
+        <div class="hero-buttons">
+
+          <button
+            class="btn btn-primary btn-lg"
+            onclick="openModal('GHL Course')">
+            🎓 GHL Course
+          </button>
+
+          <button
+            class="btn btn-outline btn-lg"
+            onclick="openModal('English Course')">
+            🗣️ English Course
+          </button>
+
+        </div>
+
+        <div class="trust-row">
+
+          <span>✓ ৬ মাসের structured learning</span>
+          <span>✓ সপ্তাহে ২টি class</span>
+          <span>✓ Freelancing guideline</span>
+
+        </div>
+
+      </div>
+
+
+      <!-- HERO VISUAL -->
+      <div class="hero-visual">
+
+        <div class="dashboard">
+
+          <div class="dashboard-top">
+
+            <div class="dots">
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+
+            <div class="dashboard-title">
+              CRM Expertise Dashboard
+            </div>
+
+          </div>
+
+
+          <div class="stats">
+
+            <div class="stat">
+              <small>CRM</small>
+              <strong>GHL</strong>
+            </div>
+
+            <div class="stat">
+              <small>Automation</small>
+              <strong>AI</strong>
+            </div>
+
+            <div class="stat">
+              <small>Career</small>
+              <strong>💼</strong>
+            </div>
+
+          </div>
+
+
+          <div class="workflow">
+
+            <h4>⚡ Automation Workflow</h4>
+
+            <div class="flow">
+
+              <div class="flow-item">
+                Lead
+              </div>
+
+              <div class="arrow">→</div>
+
+              <div class="flow-item">
+                CRM
+              </div>
+
+              <div class="arrow">→</div>
+
+              <div class="flow-item">
+                AI Agent
+              </div>
+
+              <div class="arrow">→</div>
+
+              <div class="flow-item">
+                Follow-up
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="floating-card floating-one">
+          🤖 AI Agent Building
+        </div>
+
+        <div class="floating-card floating-two">
+          🎯 Freelancing Ready
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURES -->
+  <section class="features">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          Why CRM Expertise
+        </div>
+
+        <h2>
+          শুধু Course নয় — একটি Skill Journey
+        </h2>
+
+        <p>
+          Beginner থেকে practical digital skill তৈরি করার জন্য
+          step-by-step learning system।
+        </p>
+
+      </div>
+
+
+      <div class="feature-grid">
+
+        <div class="feature">
+          <div class="icon">🎓</div>
+          <h3>Practical Learning</h3>
+          <p>
+            শুধু theory নয়, real-world style practice এবং project-based learning।
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="icon">⚙️</div>
+          <h3>Automation Skills</h3>
+          <p>
+            CRM এবং AI ব্যবহার করে business automation-এর ধারণা ও workflow।
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="icon">🤖</div>
+          <h3>AI Skills</h3>
+          <p>
+            AI Vibe Coding এবং AI Agent Building-এর modern approach।
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="icon">💼</div>
+          <h3>Freelancing Focus</h3>
+          <p>
+            Skill শেখার পর freelancing journey শুরু করার জন্য guideline।
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- COURSES -->
+  <section class="courses" id="courses">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          Choose Your Course
+        </div>
+
+        <h2>
+          আপনার প্রয়োজন অনুযায়ী Course বেছে নিন
+        </h2>
+
+        <p>
+          GHL Course এবং English Course আলাদাভাবে enrol করা যাবে।
+        </p>
+
+      </div>
+
+
+      <div class="course-grid">
+
+
+        <!-- GHL COURSE -->
+        <div class="course-card">
+
+          <div class="course-head ghl-head">
+
+            <div class="course-tag">
+              MOST POPULAR
+            </div>
+
+            <h3>GHL Mastery Course</h3>
+
+            <p>
+              GoHighLevel, CRM & Automation practical training।
+            </p>
+
+          </div>
+
+
+          <div class="course-body">
+
+            <div class="course-info">
+
+              <div class="info-box">
+                <small>Duration</small>
+                <strong>৬ মাস</strong>
+              </div>
+
+              <div class="info-box">
+                <small>Class</small>
+                <strong>সপ্তাহে ২টি</strong>
+              </div>
+
+            </div>
+
+
+            <ul class="course-list">
+
+              <li>GHL Dashboard & Account Structure</li>
+              <li>Contacts & Smart Lists</li>
+              <li>Tags & Custom Fields</li>
+              <li>Pipeline & Opportunities</li>
+              <li>Forms & Lead Capture</li>
+              <li>Workflow Automation</li>
+              <li>Calendar & Appointment System</li>
+              <li>Landing Page & Website</li>
+              <li>GHL Sub-account Practice</li>
+              <li>Freelancing Guideline</li>
+
+            </ul>
+
+
+            <button
+              class="btn btn-primary course-btn"
+              onclick="openModal('GHL Course')">
+
+              🎓 GHL Course-এ Enroll করুন
+
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- ENGLISH COURSE -->
+        <div class="course-card">
+
+          <div class="course-head english-head">
+
+            <div class="course-tag">
+              FREELANCER ENGLISH
+            </div>
+
+            <h3>English for Freelancer</h3>
+
+            <p>
+              Freelancing এবং professional communication-এর জন্য English।
+            </p>
+
+          </div>
+
+
+          <div class="course-body">
+
+            <div class="course-info">
+
+              <div class="info-box">
+                <small>Duration</small>
+                <strong>৬ মাস</strong>
+              </div>
+
+              <div class="info-box">
+                <small>Class</small>
+                <strong>সপ্তাহে ২টি</strong>
+              </div>
+
+            </div>
+
+
+            <ul class="course-list">
+
+              <li>Practical English Speaking</li>
+              <li>Freelancing Vocabulary</li>
+              <li>Client Communication</li>
+              <li>Professional Chatting</li>
+              <li>Client Meeting English</li>
+              <li>Requirement Understanding</li>
+              <li>Question Asking</li>
+              <li>Follow-up Communication</li>
+              <li>Proposal Communication</li>
+              <li>Confidence Building</li>
+
+            </ul>
+
+
+            <button
+              class="btn btn-dark course-btn"
+              onclick="openModal('English Course')">
+
+              🗣️ English Course-এ Enroll করুন
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- OTHER SKILLS -->
+  <section id="skills">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          More Skills
+        </div>
+
+        <h2>
+          আরও Modern Digital Skills
+        </h2>
+
+        <p>
+          Technology-এর পরিবর্তনের সাথে তাল মিলিয়ে modern AI skills তৈরি করুন।
+        </p>
+
+      </div>
+
+
+      <div class="skills-grid">
+
+
+        <div class="skill-card">
+
+          <div class="skill-number">
+            01 / AI
+          </div>
+
+          <h3>
+            🤖 AI Vibe Coding
+          </h3>
+
+          <p>
+            AI ব্যবহার করে website, coding এবং development workflow
+            দ্রুত ও smartভাবে করার modern approach শিখুন।
+          </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <div class="skill-number">
+            02 / AI
+          </div>
+
+          <h3>
+            🧠 AI Agent Building
+          </h3>
+
+          <p>
+            Business automation, customer support, lead qualification
+            এবং AI-powered workflow-এর জন্য agent building শিখুন।
+          </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <div class="skill-number">
+            03 / GHL
+          </div>
+
+          <h3>
+            🔐 GHL Sub-account
+          </h3>
+
+          <p>
+            Course package অনুযায়ী practice environment-এ GHL setup,
+            CRM এবং automation practice করার সুযোগ।
+          </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <div class="skill-number">
+            04 / CRM
+          </div>
+
+          <h3>
+            ⚙️ CRM Automation
+          </h3>
+
+          <p>
+            Lead management, pipeline, workflow এবং follow-up automation
+            তৈরি করার practical ধারণা।
+          </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <div class="skill-number">
+            05 / WEB
+          </div>
+
+          <h3>
+            🌐 Website & Landing Page
+          </h3>
+
+          <p>
+            Modern website ও conversion-focused landing page তৈরির
+            workflow সম্পর্কে practical learning।
+          </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <div class="skill-number">
+            06 / CAREER
+          </div>
+
+          <h3>
+            💼 Freelancing Guideline
+          </h3>
+
+          <p>
+            Skill শেখার পর freelancing market-এ নিজের service
+            নিয়ে কাজ শুরু করার জন্য structured guideline।
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- JOURNEY -->
+  <section class="journey" id="journey">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          Your Journey
+        </div>
+
+        <h2>
+          Learn → Practice → Build → Improve → Freelance
+        </h2>
+
+        <p>
+          আমাদের learning philosophy সহজ — শেখা, practice করা এবং
+          বাস্তব project তৈরি করা।
+        </p>
+
+      </div>
+
+
+      <div class="journey-grid">
+
+        <div class="journey-step">
+          <div class="num">01</div>
+          <h3>Learn</h3>
+          <p>Concept সহজভাবে বুঝুন।</p>
+        </div>
+
+        <div class="journey-step">
+          <div class="num">02</div>
+          <h3>Practice</h3>
+          <p>নিজে হাতে practice করুন।</p>
+        </div>
+
+        <div class="journey-step">
+          <div class="num">03</div>
+          <h3>Build</h3>
+          <p>Real-world project তৈরি করুন।</p>
+        </div>
+
+        <div class="journey-step">
+          <div class="num">04</div>
+          <h3>Improve</h3>
+          <p>নিজের skill আরও উন্নত করুন।</p>
+        </div>
+
+        <div class="journey-step">
+          <div class="num">05</div>
+          <h3>Freelance</h3>
+          <p>Market-এ service দেওয়ার প্রস্তুতি নিন।</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY -->
+  <section>
+
+    <div class="container why-grid">
+
+      <div class="why-box">
+
+        <div class="section-label">
+          Our Philosophy
+        </div>
+
+        <h3>
+          Certificate নয়,
+          <br>
+          Skill-ই আপনার Asset।
+        </h3>
+
+        <p>
+          আমরা চাই আপনি শুধু course complete না করে এমন practical
+          capability তৈরি করুন যা future-এ বিভিন্ন digital service
+          দেওয়ার কাজে ব্যবহার করতে পারেন।
+        </p>
+
+      </div>
+
+
+      <div class="why-list">
+
+        <div class="why-item">
+
+          <div class="check">✓</div>
+
+          <div>
+            <h4>Beginner Friendly</h4>
+            <p>
+              একদম শুরু থেকে step-by-step শেখার ব্যবস্থা।
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="why-item">
+
+          <div class="check">✓</div>
+
+          <div>
+            <h4>Practical Focus</h4>
+            <p>
+              শুধু theory নয়—practice এবং project-based learning।
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="why-item">
+
+          <div class="check">✓</div>
+
+          <div>
+            <h4>Modern Technology</h4>
+            <p>
+              CRM, AI এবং automation-এর modern tools-এর সাথে পরিচিতি।
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="why-item">
+
+          <div class="check">✓</div>
+
+          <div>
+            <h4>Freelancing Direction</h4>
+            <p>
+              Course শেষে freelancing journey-এর জন্য structured guideline।
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="why-item">
+
+          <div class="check">✓</div>
+
+          <div>
+            <h4>Separate Enrollment</h4>
+            <p>
+              GHL এবং English Course নিজের প্রয়োজন অনুযায়ী আলাদাভাবে নিতে পারবেন।
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <div class="container">
+
+      <div class="cta-box">
+
+        <h2>
+          আপনার Digital Skill Journey শুরু করুন
+        </h2>
+
+        <p>
+          আজ শেখা শুরু করুন। আগামী দিনের digital career-এর জন্য
+          নিজেকে প্রস্তুত করুন।
+        </p>
+
+
+        <div class="hero-buttons" style="justify-content:center;">
+
+          <button
+            class="btn btn-primary btn-lg"
+            onclick="openModal('GHL Course')">
+
+            🎓 GHL Course
+
+          </button>
+
+
+          <button
+            class="btn btn-lg"
+            style="background:white;color:#101828;"
+            onclick="openModal('English Course')">
+
+            🗣️ English Course
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAQ -->
+  <section id="faq">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          FAQ
+        </div>
+
+        <h2>
+          সাধারণ কিছু প্রশ্ন
+        </h2>
+
+      </div>
+
+
+      <div class="faq">
+
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+            GHL Course কতদিনের?
+            <span class="plus">+</span>
+          </button>
+
+          <div class="faq-answer">
+            GHL Course-এর duration ৬ মাস এবং সপ্তাহে ২টি class থাকবে।
+          </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+            English Course কতদিনের?
+            <span class="plus">+</span>
+          </button>
+
+          <div class="faq-answer">
+            English Course-এর duration ৬ মাস এবং সপ্তাহে ২টি class থাকবে।
+          </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+            GHL এবং English Course কি আলাদাভাবে নেওয়া যাবে?
+            <span class="plus">+</span>
+          </button>
+
+          <div class="faq-answer">
+            হ্যাঁ। আপনি চাইলে শুধু GHL Course অথবা শুধু English Course
+            enrol করতে পারবেন।
+          </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+            Beginner হলে কি GHL Course করতে পারব?
+            <span class="plus">+</span>
+          </button>
+
+          <div class="faq-answer">
+            হ্যাঁ। Course structure beginner-friendly রাখা হয়েছে এবং
+            step-by-step practical learning-এর মাধ্যমে এগোনো হবে।
+          </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+            Course শেষে কি Freelancing শেখানো হবে?
+            <span class="plus">+</span>
+          </button>
+
+          <div class="faq-answer">
+            হ্যাঁ। Course-এর শেষে freelancing-এর জন্য একটি structured
+            guideline দেওয়া হবে।
+          </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+            Course করলেই কি income guaranteed?
+            <span class="plus">+</span>
+          </button>
+
+          <div class="faq-answer">
+            কোনো legitimate course নির্দিষ্ট income guarantee করতে পারে না।
+            আমাদের লক্ষ্য হলো practical skill, practice এবং freelancing
+            preparation দেওয়া।
+          </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+            GHL Sub-account access থাকবে?
+            <span class="plus">+</span>
+          </button>
+
+          <div class="faq-answer">
+            Selected package অনুযায়ী GHL practice/sub-account access
+            দেওয়া হবে। Access duration ও terms enrollment-এর আগে জানানো হবে।
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div>
+
+          <a href="#home" class="logo">
+            <div class="logo-icon">C</div>
+            CRM <span>Expertise</span>
+          </a>
+
+          <p>
+            Practical digital skills শেখার মাধ্যমে
+            future-ready career তৈরি করার একটি learning platform।
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4>Courses</h4>
+
+          <ul>
+            <li>GHL Mastery Course</li>
+            <li>English for Freelancer</li>
+            <li>AI Vibe Coding</li>
+            <li>AI Agent Building</li>
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h4>Resources</h4>
+
+          <ul>
+            <li>Freelancing Guideline</li>
+            <li>GHL Practice</li>
+            <li>CRM Automation</li>
+            <li>AI Skills</li>
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h4>Contact</h4>
+
+          <ul>
+            <li>📱 WhatsApp</li>
+            <li>📧 Email</li>
+            <li>📘 Facebook</li>
+            <li>🌐 Bangladesh</li>
+          </ul>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="copyright">
+        © 2026 CRM Expertise. All Rights Reserved.
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- WHATSAPP -->
+  <!-- এখানে আপনার নিজের WhatsApp number বসাবেন -->
+  <a
+    class="whatsapp"
+    href="https://wa.me/8801XXXXXXXXX"
+    target="_blank"
+    title="WhatsApp">
+    ☎
+  </a>
+
+
+  <!-- ENROLLMENT MODAL -->
+  <div class="modal" id="enrollModal">
+
+    <div class="modal-box">
+
+      <button class="close" onclick="closeModal()">
+        ×
+      </button>
+
+      <h2>
+        Enroll করুন 🎓
+      </h2>
+
+      <p class="modal-sub">
+        নিচের তথ্যগুলো পূরণ করুন। আমাদের team আপনার সাথে যোগাযোগ করবে।
+      </p>
+
+
+      <form id="enrollForm">
+
+        <div class="form-group">
+
+          <label>
+            আপনার নাম
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            placeholder="আপনার পূর্ণ নাম"
+            required>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>
+            মোবাইল নম্বর
+          </label>
+
+          <input
+            type="tel"
+            id="phone"
+            placeholder="01XXXXXXXXX"
+            required>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>
+            আপনি কোন Course নিতে চান?
+          </label>
+
+          <select id="course">
+
+            <option value="GHL Course">
+              GHL Course
+            </option>
+
+            <option value="English Course">
+              English Course
+            </option>
+
+            <option value="GHL + English">
+              GHL + English
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>
+            আপনার বর্তমান Level
+          </label>
+
+          <select id="level">
+
+            <option>Beginner</option>
+            <option>Some Experience</option>
+            <option>Intermediate</option>
+
+          </select>
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="btn btn-primary modal-submit">
+
+          📲 Enrollment Request পাঠান
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <script>
+
+    /* =========================
+       MOBILE MENU
+    ========================= */
+
+    const mobileBtn = document.getElementById("mobileBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    mobileBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+
+    });
+
+
+    /* =========================
+       FAQ
+    ========================= */
+
+    document.querySelectorAll(".faq-question").forEach(question => {
+
+      question.addEventListener("click", () => {
+
+        const item = question.parentElement;
+
+        document.querySelectorAll(".faq-item").forEach(other => {
+
+          if (other !== item) {
+            other.classList.remove("active");
+          }
+
+        });
+
+        item.classList.toggle("active");
+
+      });
+
+    });
+
+
+    /* =========================
+       MODAL
+    ========================= */
+
+    const modal = document.getElementById("enrollModal");
+    const courseSelect = document.getElementById("course");
+
+    function openModal(courseName) {
+
+      modal.classList.add("show");
+
+      if (courseName === "English Course") {
+        courseSelect.value = "English Course";
+      }
+
+      if (courseName === "GHL Course") {
+        courseSelect.value = "GHL Course";
+      }
+
+    }
+
+
+    function closeModal() {
+      modal.classList.remove("show");
+    }
+
+
+    window.addEventListener("click", (event) => {
+
+      if (event.target === modal) {
+        closeModal();
+      }
+
+    });
+
+
+    /* =========================
+       ENROLLMENT FORM
+    ========================= */
+
+    document.getElementById("enrollForm").addEventListener("submit", function(e) {
+
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const course = document.getElementById("course").value;
+      const level = document.getElementById("level").value;
+
+
+      /*
+        IMPORTANT:
+
+        নিচের নম্বরটি আপনার CRM Expertise-এর
+        WhatsApp number দিয়ে পরিবর্তন করবেন।
+
+        Example:
+        8801712345678
+      */
+
+      const whatsappNumber = "8801XXXXXXXXX";
+
+
+      const message =
+        "CRM Expertise Enrollment Request%0A%0A" +
+        "Name: " + encodeURIComponent(name) + "%0A" +
+        "Phone: " + encodeURIComponent(phone) + "%0A" +
+        "Course: " + encodeURIComponent(course) + "%0A" +
+        "Level: " + encodeURIComponent(level);
+
+
+      window.open(
+        "https://wa.me/" + whatsappNumber + "?text=" + message,
+        "_blank"
+      );
+
+    });
+
+
+    /* =========================
+       LANGUAGE SWITCH
+       Demo language switch
+    ========================= */
+
+    document.getElementById("language").addEventListener("change", function() {
+
+      const language = this.value;
+
+      if (language === "en") {
+
+        alert(
+          "English version is ready to be connected. " +
+          "The current landing page uses Bangla as the default language."
+        );
+
+      }
+
+      if (language === "hi") {
+
+        alert(
+          "Hindi version is ready to be connected. " +
+          "The current landing page uses Bangla as the default language."
+        );
+
+      }
+
+      if (language === "bn") {
+
+        location.reload();
+
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>
+```
